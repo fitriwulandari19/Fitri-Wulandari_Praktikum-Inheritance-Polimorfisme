@@ -1,27 +1,27 @@
-class tekoma(object):
+class SuJu_KRY(object):
     def __init__(self, a):
         self.a = a
     def cetakA(self):
-        print("TeKom A = ", self.a)
+        print("Super Junior KRY = ", self.a)
 
-class tekomb(object):
+class SuJu_M(object):
     def __init__(self, b):
         self.b = b
     def cetakB(self):
-        print("TeKom B = ", self.b)
+        print("Super Junior M   = ", self.b)
 
-class tekomc(tekoma, tekomb):
+class SuJu_DE(SuJu_KRY, SuJu_M):
     def __init__(self, a, b, c):
-        #memanggil induk1.__init__)
-        tekoma.__init__(self, a)
-        #memanggil induk2.__init__)
-        tekomb.__init__(self, b)
+        #memanggil SuJu_KRY.__init__)
+        SuJu_KRY.__init__(self, a)
+        #memanggil SuJu_M.__init__)
+        SuJu_M.__init__(self, b)
         self.c = c
     def cetakC(self):
-        print("TeKom C = ", self.c)
+        print("Super Junior D&E = ", self.c)
 
 def main():
-    obj = tekomc("28 orang" , "29 orang", "31 orang")
+    obj = SuJu_DE("3 orang" , "7 orang", "2 orang")
 
     obj.cetakA()
 
