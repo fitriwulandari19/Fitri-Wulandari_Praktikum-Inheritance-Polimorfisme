@@ -21,7 +21,7 @@ class SuJu(SuperJunior):
         print("fandom\t: ", self.fandom)
         print("anggota\t: ", self.anggota)
         print("leader\t: ", self.leader)
-        print("maknae\t: ", self.maknae)
+        print("maknae(termuda)\t: ", self.maknae)
 
 def main():
     SuJu1 = SuJu("ELF", "13 orang", "Leeteuk", "Kyuhyun")
